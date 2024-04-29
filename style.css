@@ -1,0 +1,73 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef1f5; /* Mykere blå-grå bakgrunnsfarge */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 95%; /* Tilpasser bredden slik at kortene passer inn */
+  max-width: 1200px; /* Øker maksimal bredde */
+}
+
+.card {
+  width: 400px; /* Øker bredden for å gjøre kortet større */
+  height: 240px; /* Øker høyden for å gjøre kortet større */
+  padding: 30px; /* Øker polstring for bedre layout av innhold */
+  background: linear-gradient(
+    to bottom right,
+    #ffffff,
+    #e6e6e6
+  ); /* Subtil gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Øker margin for å gi mer plass mellom kortene */
+  border-radius: 15px; /* Mykere og større hjørner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  background: linear-gradient(
+    135deg,
+    #b7eaff,
+    #94dfff
+  ); /* Mykere blå gradient */
+  color: white;
+}
+
+.back {
+  background: linear-gradient(
+    135deg,
+    #ffe2cc,
+    #ffd1a9
+  ); /* Mykere oransje gradient */
+  color: #333;
+}
+
+.card img {
+  width: 120px; /* Større bildestørrelse for større kort */
+  height: 120px; /* Større bildestørrelse for større kort */
+  border-radius: 50%;
+  border: 4px solid #ffffff; /* Tykkere hvit grense rundt bildet */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Større skyggeeffekt for mer dybde */
+}
+
+.card h1,
+.card h2 {
+  margin: 10px 0; /* Justerer margin for større layout */
+  font-size: larger; /* Større skriftstørrelse for bedre lesbarhet */
+}
+
+.card p {
+  margin: 5px 0; /* Justerer margin for større layout */
+  text-align: center;
+  font-size: larger; /* Større skriftstørrelse for bedre lesbarhet */
+}
